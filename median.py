@@ -9,10 +9,11 @@ while True:
         print("Some input could not be converted to a number!")
     else:
         break
-print(numbers)
-if len(numbers)%2 == 0:
-    medianEven = numbers[int(len(numbers)/2)] + numbers[int((len(numbers)/2)-1)/2]
+ascendingNumbers = numbers.sort()
+print(ascendingNumbers)
+if len(ascendingNumbers)%2 == 0:
+    medianEven = ascendingNumbers[int(len(ascendingNumbers)/2)] + ascendingNumbers[int(((len(ascendingNumbers)/2)-1)/2)]
     print(medianEven)
 else:
-    medianOdd = numbers[int((len(numbers)-1)/2)]
+    medianOdd = ascendingNumbers[int((len(ascendingNumbers)-1)/2)]
     print(medianOdd)
