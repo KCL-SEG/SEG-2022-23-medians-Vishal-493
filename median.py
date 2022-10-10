@@ -12,7 +12,7 @@ while True:
 numbers.sort()
 print(numbers)
 if len(numbers)%2 == 0:
-    medianEven = float((numbers[int(len(numbers)/2)] + numbers[int(((len(numbers)/2)-1)/2)])/2)
+    medianEven = float((numbers[int(len(numbers)/2)] + numbers[int((len(numbers)/2)-1)])/2)
     print(medianEven)
 else:
     medianOdd = numbers[int((len(numbers)-1)/2)]
