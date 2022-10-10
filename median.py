@@ -11,8 +11,8 @@ while True:
         break
 print(numbers)
 if len(numbers)%2 == 0:
-    medianEven = (numbers[len(numbers)/2] + numbers[(len(numbers)/2)-1])/2
+    medianEven = (int(numbers[len(numbers)/2)] + numbers[int((len(numbers)/2)-1)])/2
     print(medianEven)
 else:
-    medianOdd = (numbers[(len(numbers)-1)/2])
+    medianOdd = (int(numbers[(len(numbers)-1)/2]))
     print(medianOdd)
