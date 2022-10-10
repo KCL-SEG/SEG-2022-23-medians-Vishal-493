@@ -11,7 +11,7 @@ while True:
         break
 numbers.sort()
 print(numbers)
-if len(ascendingNumbers)%2 == 0:
+if len(numbers)%2 == 0:
     medianEven = numbers[int(len(numbers)/2)] + numbers[int(((len(numbers)/2)-1)/2)]
     print(medianEven)
 else:
