@@ -13,6 +13,6 @@ print(numbers)
 if len(numbers)%2 == 0:
     medianEven = (numbers[len(numbers)/2] + numbers[(len(numbers)/2)-1])/2
     print(medianEven)
-else len(numbers)%2 == 1:
+else:
     medianOdd = (numbers[(en(numbers)-1)/2]
     print(medianOdd)
